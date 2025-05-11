@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portifólio</title>
+  </head>
+  <body>
+    <section>
+      <h1>Sobre mim</h1>
+      <p>Olá! Meu nome é Henrick Nogueira, sou desenvolvedor de software.</p>
+    </section>
+    <section>
+      <h2>Habilities</h2>
+      <ul>
+        {% for chave, dados in habilidades.items %}
+        <li>{{dados.nome}}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h2>Contatos</h2>
+      <p>Email: henrick.nogueira@email.com</p>
+    </section>
+  </body>
+</html>
